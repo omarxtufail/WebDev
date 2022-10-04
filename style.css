@@ -89,7 +89,7 @@
         color: gray;
         text-decoration: none;
         text-transform: uppercase;
-        font-family:'Josefin Sans' ;
+        font-family:'Sans-Serif' ;
     }
 /*This is styling for the little line under the page names that transitions in when you hover over the name*/
     nav a::before{
@@ -181,10 +181,10 @@
         #date{
             text-align: center;
         }
-        
-    
      
-      
+     .gradient{
+        background: linear-gradient(45deg, #666edb, #b9655e);
+     }
     /* This clear class style terminates float */ 
     .clear{ 
     clear: both; 
