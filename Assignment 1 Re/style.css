@@ -1,0 +1,191 @@
+@charset "UTF-8"; 
+    /* CSS Document */ 
+    /* The body tag style applies to all elements on the page */ 
+    body { 
+    background-color: #ffffff; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    padding:0px; 
+    margin:0px; 
+   
+    } 
+    /* The wrapper ID style is used with a div tag to provide a 960px wide page */ 
+   
+    /* The right-column ID style is floated right */ 
+    #right-column { 
+    float: right; 
+    width: 600px;height: 600px; 
+    background-color:LightGray; 
+    } 
+    /* The left-column ID style is floated left */ 
+    #left-column { 
+    float: left; 
+    width: 360px;background-color:silver; 
+    height:600px; 
+    } 
+    #leftcolumn { 
+        float: left; 
+        width: 400px;background-color:#b7ad8b; 
+        height:600px; 
+        } 
+
+    /* Defining a style for a set of tags separated by commas applies the style to 
+    all tags */ 
+    h1,h2,h3,h4,h5,h6,p,li { 
+    margin-left:15px; 
+    } 
+    #footer { 
+    height:80px; 
+    } 
+    #banner{ 
+    height:100px; 
+    background-color:#B8AE9C; 
+    } 
+    #banner2{ 
+        height:60px; 
+        background-color:#B8AE9C; 
+        } 
+    /* Defining a style for a set of tags not separated by commas applies the style 
+    only to all tags within the preceding tag*/ 
+    #banner h1 { 
+    color:#B8AE9C; 
+    margin-top: 20px;
+    }
+/*This is the styling for the logo*/
+    .web-logo{
+        width: 100px;
+        margin-left: 15px;
+        margin-top: 15px;
+        float : left;
+     
+    }
+ /*This is where the styling for the navigation bar is. The elements "Home", "About Me", "Contact", "Projects" habe been shifted to the right side of the page*/  
+    nav{
+        float: right;
+        margin-right: 10px;
+        margin-top: 80px
+    }
+    
+    header {
+        background: #ACCFCC;
+    }
+    header ::after{
+        content:'';
+        display: table;
+        clear: both;
+
+    }
+    nav ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav li{
+        display: inline-block;
+        margin: 0 35px;
+        position:relative;
+    }
+    nav a {
+        color: gray;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family:'Sans-Serif' ;
+    }
+/*This is styling for the little line under the page names that transitions in when you hover over the name*/
+    nav a::before{
+        content: '';
+        display: block;
+        height: 5px;
+        width: 100%;
+        background-color: #595241;
+
+        position: absolute;
+        top: 100%;
+        width: 0%;
+
+        transition: all ease-in-out 250ms;
+        
+        }
+    
+        nav a:hover::before{
+            width: 100%;
+        }
+        /*Formatting the picture of me*/
+        .blvd{
+            width: 450px;
+            float: right;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .palmmute{
+            margin-left: 50px;
+            height: fit-content;
+            
+        }
+        h1{
+            text-align: center;
+            margin-top: 100px;
+            margin-bottom: 50px;
+            color: #B8AE9C;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+        }
+        p{
+            text-align: center;
+            color: #B8AE9C;
+        }
+        .wrapper {
+            position: relative;
+            text-align: center;
+            color: white;
+            height: fit-content;
+        }
+       #wrapper{
+        position: relative;
+        text-align:left;
+        color: #B8AE9C;
+       }
+        .centered {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #B8AE9C;
+          
+          }
+        .notcentered{
+            position: relative;
+            top: 100%;
+            left: 40%;
+            bottom: 80%;
+            transform: translate(-40%, -100%);
+            color: #B8AE9C;
+            height:fit-content;
+        }
+        .notcentered b {
+            position: relative;
+            top: -100px;
+            color: #B8AE9C;
+            width: fit-content;
+            height: fit-content;
+        }
+        .notcentered h1 {
+            position: relative;
+            top: -100px;
+            left: 70px;
+            color: #B8AE9C;
+            width: fit-content;
+            height: fit-content;
+        }
+        
+        #date{
+            text-align: center;
+        }
+     
+     .gradient{
+        background: linear-gradient(45deg, #666edb, #b9655e);
+     }
+    /* This clear class style terminates float */ 
+    .clear{ 
+    clear: both; 
+    }
